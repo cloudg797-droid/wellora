@@ -302,9 +302,30 @@
         <li><a href="#artikel">Artikel</a></li>
         <li><a href="#kontak">Kontak</a></li>
       </ul>
-      <p class="footer-copy">
-         2026 Wellora. Seluruh hak cipta dilindungi. Yang Buat Guwa (Yunan X-2) Asli Pesat
-      </p>
     </footer>
+    <section>
+      
+      <button id="BtnBackToTop" class="btn-biarkeatas"
+      onclick="KeAtasHalaman()">
+        <i class="fa-solid fa-arrow-up"></i>
+      </section>
+      <script>
+        // setiap user scroll, menjalankan fungsi didalamnya, berulang- ulang selama user melakukan scrolling
+        window.addEventListener('scroll', function() {
+        const btntop =document.getElementById('BtnBackToTop');
+          if (window.scrollY > 300) {
+         btntop.style.display = 'flex'
+
+          } else{
+            btntop.style.display = 'none';
+          }
+        });
+        function KeAtasHalaman(){
+          window.scrollTo({
+            top: 0, behavior: 'smooth'
+          })
+        }
+        
+      </script>
   </body>
 </html>
