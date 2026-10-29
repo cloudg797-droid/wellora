@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.page {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content sidebar"
+    "cards cards"
+    "footer footer";
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 10px;
+}
+.header {
+  grid-area: header;
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #f97316;
+  color: white;
+  padding: 15px;
+}
+.content {
+  grid-area: content;
+  background: #f1f5f9;
+  padding: 15px;
+}
+/* Menyusun 6 kartu dalam 2 baris dan 3 kolom */
+.cards {
+  grid-area: cards;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 25px 10px;
+  text-align: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+.footer {
+  grid-area: footer;
+  background: #1e293b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
