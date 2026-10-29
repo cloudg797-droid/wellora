@@ -525,6 +525,7 @@ header {
   margin: 10px auto 30px auto;
   margin-top: 60px;
   margin-bottom: 60px;
+  
 }
 
 .containerartikel {
@@ -532,6 +533,7 @@ header {
   /* display: flex; */
   align-items: center;
   justify-content: center;
+  padding: 100px;
 }
 
 .artikel span {
@@ -928,8 +930,8 @@ footer nav {
     border: none;
     height: 1px;
     background-color: #a7b9a8b8;
-    margin: 25px 0;
-}
+    margin: 25px 0;  
+  }
 
 
 /* tombol biar ke atas */
